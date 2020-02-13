@@ -13,34 +13,10 @@ export default class App extends Component {
       <View style={styles.container}>
         <Image source={logo} style={styles.logo}/>
         <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>Hello World!!</Text>
+        <Text style={styles.instructions, styles.welcome}>Hello World!!</Text>
         <Text style={styles.instructions}>{instructions}</Text>
       </View>
     );
   }
 }
 
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     justifyContent: 'center',
-//     alignItems: 'center',
-//     backgroundColor: '#F5FCFF',
-//   },
-//   welcome: {
-//     fontSize: 20,
-//     textAlign: 'center',
-//     margin: 10,
-//   },
-//   instructions: {
-//     textAlign: 'center',
-//     color: '#888',
-//     fontSize: 18,
-//     marginHorizontal: 15,
-//   },
-//   logo: {
-//     width: 305,
-//     height: 159,
-//     marginBottom: 10
-//   }
-// });
