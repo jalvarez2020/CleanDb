@@ -12,9 +12,7 @@ export default class App extends Component {
     return (
       <View style={styles.container}>
         <Image source={logo} style={styles.logo}/>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions, styles.welcome}>Hello World!!</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
+        <Text style={styles.welcome}>Under Construction</Text>
       </View>
     );
   }
