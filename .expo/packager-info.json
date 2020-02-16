@@ -1,10 +1,10 @@
 {
   "devToolsPort": 19002,
   "expoServerPort": 19000,
-  "packagerPort": null,
-  "packagerPid": null,
+  "packagerPort": 19001,
+  "packagerPid": 27168,
   "expoServerNgrokUrl": "https://tk-wa9.anonymous.cleandb.exp.direct",
   "packagerNgrokUrl": "https://packager.tk-wa9.anonymous.cleandb.exp.direct",
-  "ngrokPid": 13824,
+  "ngrokPid": 8852,
   "webpackServerPort": 19006
 }

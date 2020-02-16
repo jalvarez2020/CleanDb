@@ -11,11 +11,9 @@ const instructions = Platform.select({
 export default class App extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Image source={logo} style={styles.logo}/>
-        <Text style={styles.welcome}>Under Construction</Text>
+      
         <Login/>
-      </View>
+      
     );
   }
 }
