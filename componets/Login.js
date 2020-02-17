@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import {Button, Input, Icon, } from 'react-native-elements';
-import { StyleSheet, Image, } from 'react-native';
+import { StyleSheet, Image, Text } from 'react-native';
 
 
 
@@ -43,20 +43,24 @@ export const Login = () => {
                     />
                 </View>
             <View style={style.btnWrap}>
-                <Button
-                    title="Login"
-                    type='solid'
-                    raised={true}
-                    buttonStyle={style.button}
-                />
-            <View></View>    
-                 <Button
-                    title="Login"
-                    type='solid'
-                    raised={true}
-                    buttonStyle={style.button}
-                />
+                <View style={style.btnLoginWrap}>
+                    <Button
+                        title="Login"
+                        type='solid'
+                        raised={true}
+                        buttonStyle={style.button}
+                    />
+                </View>
+                <View style={style.btnSignWrap}>
+                    <Button
+                        title="Sign Up"
+                        type='solid'
+                        raised={true}
+                        buttonStyle={style.btnSign}
+                    />
+                    </View>
             </View>
+            <Text style={style.text}>All rights reserved &copy;</Text>
         </View>
         
     )
@@ -67,7 +71,7 @@ export const style = StyleSheet.create({
         flex: 1,
         margin: 0,
         padding: 0,
-        backgroundColor: 'lightgrey'
+        backgroundColor: '#d3d3d3'
     },
 
     head: {
@@ -76,7 +80,7 @@ export const style = StyleSheet.create({
 
     img: {
         flex: 1,
-        height: 50,
+        
     },
 
     inputWrap: {
@@ -96,10 +100,28 @@ export const style = StyleSheet.create({
         flex: 1,
         marginVertical: 10,
         marginHorizontal: 70,
-        backgroundColor: 'lightgrey'
+        backgroundColor: '#d3d3d3'
     },
-    button: {
+    btnLoginWrap: {
+        marginVertical: 10,
+    },
+
+    btnLogin: {
 
     },
+
+    btnSignWrap: {
+        marginVertical: 10,
+    },
+
+    btnSign: {
+        backgroundColor: '#D3455B'
+    },
+
+    text: {
+        textAlign: 'center',
+        color: '#212931',
+        marginVertical: 15,
+    }
 
 })
