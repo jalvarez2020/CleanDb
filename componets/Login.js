@@ -79,7 +79,8 @@ export const style = StyleSheet.create({
     },
 
     img: {
-        flex: 1,
+        width: '100%',
+        height: '80%',
         
     },
 
