@@ -6,15 +6,28 @@ import { StyleSheet, Image, Text } from 'react-native';
 
 
 
-export const Login = () => {
+export const SignUp = () => {
     return(
         <View style={style.wrap}>
             <View style={style.head}>
                 <Image source={require('../assets/imgs/cover.png')} style={style.img} />
-            </View>
+        </View>
+                <Input
+                        autoFocus={true}
+                        inputContainerStyle={style.input}
+                        placeholder={'Name'}
+                        leftIcon={
+                            <Icon
+                                iconStyle={style.icon}
+                                name='user'
+                                type='font-awesome'
+                                size={24}
+                                color='grey'
+                            />
+                        }
+                    />
                 <View style={style.inputWrap}>
                     <Input
-                        autoFocus={true}
                         inputContainerStyle={style.input}
                         errorStyle={{color: 'red'}}
                         placeholder={'Email'}
@@ -44,14 +57,6 @@ export const Login = () => {
                     />
                 </View>
             <View style={style.btnWrap}>
-                <View style={style.btnLoginWrap}>
-                    <Button
-                        title="Login"
-                        type='solid'
-                        raised={true}
-                        buttonStyle={style.button}
-                    />
-                </View>
                 <View style={style.btnSignWrap}>
                     <Button
                         title="Sign Up"
