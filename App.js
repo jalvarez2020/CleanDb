@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Image, Platform, Text, View } from 'react-native';
 import {styles} from './styles/mainStyles';
 import {Login} from './componets/Login';
+import {SignUp} from './componets/SignUp';
 
 
 const instructions = Platform.select({
@@ -12,9 +13,8 @@ const instructions = Platform.select({
 export default class App extends Component {
   render() {
     return (
-        <Login/>
-      
+        <SignUp/>
     );
-  }
-}
+  };
+};
 
