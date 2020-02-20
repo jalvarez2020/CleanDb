@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import {Button, Input, Icon, } from 'react-native-elements';
-import { StyleSheet, Image, Text } from 'react-native';
+import {Image, Text } from 'react-native';
 import {KeyboardAvoidingView} from 'react-native';
 import {styles} from '../styles/mainStyles'
 
@@ -65,10 +65,10 @@ export const SignUp = () => {
                 <View style={styles.btnWrap}>
                     <View style={styles.btnSignWrap}>
                         <Button
-                            title="Sign Up"
+                            title="Submit"
                             type='solid'
                             raised={true}
-                            buttonStyle={styles.btnSign}
+                            buttonStyle={styles.btnSubmit}
                             />
                     </View>
                 </View>

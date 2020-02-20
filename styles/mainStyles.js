@@ -16,51 +16,52 @@ export const styles = StyleSheet.create({
  },
 
  img: {
-     width: '100%',
-     height: '80%',
+    width: '100%',
+    height: '80%',
      
  },
 
  inputWrap: {
-     flex: 1,
+    flex: 1,
  },
 
  input: {
-     marginVertical: 20,
-     marginHorizontal: 50,
+    marginVertical: 20,
+    marginHorizontal: 50,
  },
 
  icon: {
-         marginLeft: -15,
-         marginRight: 10,
- }, 
+    marginLeft: -15,
+    marginRight: 10,
+ },
+ 
  btnWrap: {
-     flex: 1,
-     marginVertical: 10,
-     marginHorizontal: 70,
-     backgroundColor: '#d3d3d3'
+    flex: 1,
+    marginVertical: 10,
+    marginHorizontal: 70,
+    backgroundColor: '#d3d3d3'
  },
  btnLoginWrap: {
-     marginVertical: 10,
+    marginVertical: 10,
  },
 
  btnLogin: {
-     backgroundColor: '#1aae9f',
+    backgroundColor: '#1aae9f',
  },
 
  btnSignWrap: {
-     marginVertical: 10,
-     flex: 2,
+    marginVertical: 10,
+    flex: 2,
  },
 
  btnSign: {
-     backgroundColor: '#D3455B'
+    backgroundColor: '#D3455B'
  },
 
  text: {
-     textAlign: 'center',
-     color: '#212931',
-     marginVertical: 15,
+    textAlign: 'center',
+    color: '#212931',
+    marginVertical: 15,
  },
     
   btnSubmit: {

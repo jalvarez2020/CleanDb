@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import {Button, Input, Icon, } from 'react-native-elements';
-import { StyleSheet, Image, Text, KeyboardAvoidingView } from 'react-native';
+import { Image, Text, KeyboardAvoidingView } from 'react-native';
 import {styles} from '../styles/mainStyles.js'
 
 
@@ -13,13 +13,13 @@ export const Login = () => {
             <View style={styles.head}>
                 <Image source={require('../assets/imgs/cover.png')} style={styles.img} />
             </View>
-                        <KeyboardAvoidingView style={{flex:3}} behavior="padding" enabled>
-                                <Input
-                                    autoFocus={true}
-                                    inputContainerStyle={styles.input}
-                                    errorStyle={{color: 'red'}}
-                                    placeholder={'Email'}
-                                    leftIcon={
+                    <KeyboardAvoidingView style={{flex:3}} behavior="padding" enabled>
+                            <Input
+                                autoFocus={true}
+                                inputContainerStyle={styles.input}
+                                errorStyle={{color: 'red'}}
+                                placeholder={'Email'}
+                                leftIcon={
                                         <Icon
                                             iconStyle={styles.icon}
                                             name='envelope-square'
@@ -28,12 +28,12 @@ export const Login = () => {
                                             color='grey'
                                         />
                                     }
-                                />
-                                <Input
-                                    inputContainerStyle={styles.input}
-                                    secureTextEntry={true}
-                                    placeholder={'Password'}
-                                    leftIcon={
+                            />
+                            <Input
+                                inputContainerStyle={styles.input}
+                                secureTextEntry={true}
+                                placeholder={'Password'}
+                                leftIcon={
                                         <Icon
                                             iconStyle={styles.icon}
                                             name='key'
@@ -42,7 +42,7 @@ export const Login = () => {
                                             color='grey'
                                         />
                                     }
-                                />
+                            />
                         </KeyboardAvoidingView>
             <View style={styles.btnWrap}>
                 <View style={styles.btnLoginWrap}>
