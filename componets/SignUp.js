@@ -16,7 +16,7 @@ export const SignUp = () => {
                     <View style={styles.head}>
                         <Image source={require('../assets/imgs/cover.png')} style={styles.img} />
                     </View>
-                    <KeyboardAvoidingView style={{flex:3}} behavior="padding" enabled>
+                    <KeyboardAvoidingView style={{flex:6}} behavior="padding" enabled>
                         <Input
                             autoFocus={true}
                             inputContainerStyle={styles.input}
@@ -72,7 +72,7 @@ export const SignUp = () => {
                             />
                     </View>
                 </View>
-                <Text style={style.text}>All rights reserved &copy;</Text>
+                <Text style={styles.text}>All rights reserved &copy;</Text>
             </View>
     )
 }
