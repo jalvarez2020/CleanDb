@@ -13,7 +13,7 @@ export const Login = () => {
             <View style={styles.head}>
                 <Image source={require('../assets/imgs/cover.png')} style={styles.img} />
             </View>
-                        <KeyboardAvoidingView style={{flex:1}} behavior="padding" enabled>
+                        <KeyboardAvoidingView style={{flex:3}} behavior="padding" enabled>
                                 <Input
                                     autoFocus={true}
                                     inputContainerStyle={styles.input}

@@ -16,7 +16,7 @@ export const SignUp = () => {
                     <View style={styles.head}>
                         <Image source={require('../assets/imgs/cover.png')} style={styles.img} />
                     </View>
-                    <KeyboardAvoidingView style={{flex:2}} behavior="padding" enabled>
+                    <KeyboardAvoidingView style={{flex:1}} behavior="padding" enabled>
                         <Input
                             autoFocus={true}
                             inputContainerStyle={styles.input}

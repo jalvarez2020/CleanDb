@@ -50,6 +50,7 @@ export const styles = StyleSheet.create({
 
  btnSignWrap: {
      marginVertical: 10,
+     flex: 2,
  },
 
  btnSign: {
