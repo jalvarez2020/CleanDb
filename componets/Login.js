@@ -2,25 +2,26 @@ import React from 'react';
 import { View } from 'react-native';
 import {Button, Input, Icon, } from 'react-native-elements';
 import { StyleSheet, Image, Text, KeyboardAvoidingView } from 'react-native';
+import {styles} from '../styles/mainStyles.js'
 
 
 
 
 export const Login = () => {
     return(
-        <View style={style.wrap}>
-            <View style={style.head}>
-                <Image source={require('../assets/imgs/cover.png')} style={style.img} />
+        <View style={styles.wrap}>
+            <View style={styles.head}>
+                <Image source={require('../assets/imgs/cover.png')} style={styles.img} />
             </View>
                         <KeyboardAvoidingView style={{flex:1}} behavior="padding" enabled>
                                 <Input
                                     autoFocus={true}
-                                    inputContainerStyle={style.input}
+                                    inputContainerStyle={styles.input}
                                     errorStyle={{color: 'red'}}
                                     placeholder={'Email'}
                                     leftIcon={
                                         <Icon
-                                            iconStyle={style.icon}
+                                            iconStyle={styles.icon}
                                             name='envelope-square'
                                             type='font-awesome'
                                             size={24}
@@ -29,12 +30,12 @@ export const Login = () => {
                                     }
                                 />
                                 <Input
-                                    inputContainerStyle={style.input}
+                                    inputContainerStyle={styles.input}
                                     secureTextEntry={true}
                                     placeholder={'Password'}
                                     leftIcon={
                                         <Icon
-                                            iconStyle={style.icon}
+                                            iconStyle={styles.icon}
                                             name='key'
                                             type='font-awesome'
                                             size={24}
@@ -43,87 +44,26 @@ export const Login = () => {
                                     }
                                 />
                         </KeyboardAvoidingView>
-            <View style={style.btnWrap}>
-                <View style={style.btnLoginWrap}>
+            <View style={styles.btnWrap}>
+                <View style={styles.btnLoginWrap}>
                     <Button
                         title="Login"
                         type='solid'
                         raised={true}
-                        buttonStyle={style.button}
+                        buttonStyle={styles.btnLogin}
                     />
                 </View>
-                <View style={style.btnSignWrap}>
+                <View style={styles.btnSignWrap}>
                     <Button
                         title="Sign Up"
                         type='solid'
                         raised={true}
-                        buttonStyle={style.btnSign}
+                        buttonStyle={styles.btnSign}
                     />
                 </View>
             </View>
-            <Text style={style.text}>All rights reserved &copy;</Text>
+            <Text style={styles.text}>All rights reserved &copy;</Text>
         </View>
         
     )
 }
-
-export const style = StyleSheet.create({
-    wrap: {
-        flex: 1,
-        margin: 0,
-        padding: 0,
-        backgroundColor: '#d3d3d3'
-    },
-
-    head: {
-       flex: 2,
-    },
-
-    img: {
-        width: '100%',
-        height: '80%',
-        
-    },
-
-    inputWrap: {
-        flex: 1,
-    },
-
-    input: {
-        marginVertical: 20,
-        marginHorizontal: 50,
-    },
-
-    icon: {
-            marginLeft: -15,
-            marginRight: 10,
-    }, 
-    btnWrap: {
-        flex: 1,
-        marginVertical: 10,
-        marginHorizontal: 70,
-        backgroundColor: '#d3d3d3'
-    },
-    btnLoginWrap: {
-        marginVertical: 10,
-    },
-
-    btnLogin: {
-
-    },
-
-    btnSignWrap: {
-        marginVertical: 10,
-    },
-
-    btnSign: {
-        backgroundColor: '#D3455B'
-    },
-
-    text: {
-        textAlign: 'center',
-        color: '#212931',
-        marginVertical: 15,
-    }
-
-})

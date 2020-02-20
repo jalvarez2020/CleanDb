@@ -3,6 +3,7 @@ import { View } from 'react-native';
 import {Button, Input, Icon, } from 'react-native-elements';
 import { StyleSheet, Image, Text } from 'react-native';
 import {KeyboardAvoidingView} from 'react-native';
+import {styles} from '../styles/mainStyles'
 
 
 
@@ -11,18 +12,18 @@ import {KeyboardAvoidingView} from 'react-native';
 export const SignUp = () => {
     return(
             
-            <View style={style.wrap}>
-                    <View style={style.head}>
-                        <Image source={require('../assets/imgs/cover.png')} style={style.img} />
+            <View style={styles.wrap}>
+                    <View style={styles.head}>
+                        <Image source={require('../assets/imgs/cover.png')} style={styles.img} />
                     </View>
                     <KeyboardAvoidingView style={{flex:2}} behavior="padding" enabled>
                         <Input
                             autoFocus={true}
-                            inputContainerStyle={style.input}
+                            inputContainerStyle={styles.input}
                             placeholder={'Name'}
                             leftIcon={
                                 <Icon
-                                    iconStyle={style.icon}
+                                    iconStyle={styles.icon}
                                     name='user'
                                     type='font-awesome'
                                     size={24}
@@ -30,14 +31,14 @@ export const SignUp = () => {
                                     />
                                      }
                                 />
-                    <View style={style.inputWrap}>
+                    <View style={styles.inputWrap}>
                             <Input
-                                inputContainerStyle={style.input}
+                                inputContainerStyle={styles.input}
                                 errorStyle={{color: 'red'}}
                                 placeholder={'Email'}
                                 leftIcon={
                                     <Icon
-                                        iconStyle={style.icon}
+                                        iconStyle={styles.icon}
                                         name='envelope-square'
                                         type='font-awesome'
                                         size={24}
@@ -46,12 +47,12 @@ export const SignUp = () => {
                                     }
                                 />
                             <Input
-                                inputContainerStyle={style.input}
+                                inputContainerStyle={styles.input}
                                 secureTextEntry={true}
                                 placeholder={'Password'}
                                 leftIcon={
                                         <Icon
-                                            iconStyle={style.icon}
+                                            iconStyle={styles.icon}
                                             name='key'
                                             type='font-awesome'
                                             size={24}
@@ -61,13 +62,13 @@ export const SignUp = () => {
                                 />
                             </View>
                     </KeyboardAvoidingView>
-                <View style={style.btnWrap}>
-                    <View style={style.btnSignWrap}>
+                <View style={styles.btnWrap}>
+                    <View style={styles.btnSignWrap}>
                         <Button
                             title="Sign Up"
                             type='solid'
                             raised={true}
-                            buttonStyle={style.btnSign}
+                            buttonStyle={styles.btnSign}
                             />
                     </View>
                 </View>
@@ -76,61 +77,3 @@ export const SignUp = () => {
     )
 }
 
-export const style = StyleSheet.create({
-    wrap: {
-        flex: 1,
-        backgroundColor: '#d3d3d3'
-    },
-
-    head: {
-       flex: 2,
-    },
-
-    img: {
-        width: '100%',
-        height: '80%',
-        
-    },
-
-    inputWrap: {
-        flex: 1,
-    },
-
-    input: {
-        marginVertical: 20,
-        marginHorizontal: 50,
-    },
-
-    icon: {
-            marginLeft: -15,
-            marginRight: 10,
-    }, 
-    btnWrap: {
-        flex: 1,
-        marginVertical: 10,
-        marginHorizontal: 70,
-        backgroundColor: '#d3d3d3'
-    },
-    btnLoginWrap: {
-        marginVertical: 10,
-    },
-
-    btnLogin: {
-
-    },
-
-    btnSignWrap: {
-        marginVertical: 10,
-    },
-
-    btnSign: {
-        backgroundColor: '#D3455B'
-    },
-
-    text: {
-        textAlign: 'center',
-        color: '#212931',
-        marginVertical: 15,
-    }
-
-})
