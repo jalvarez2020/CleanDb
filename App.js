@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {Image, Platform, Text, View } from 'react-native';
-import {styles} from './styles/mainStyles';
 import {Login} from './componets/Login';
 import {SignUp} from './componets/SignUp';
 
