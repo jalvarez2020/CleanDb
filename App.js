@@ -1,4 +1,6 @@
+import 'react-native-gesture-handler';
 import React, { Component } from 'react';
+import { NavigationContainer } from '@react-navigation/native';
 import {Image, Platform, Text, View } from 'react-native';
 import {Login} from './componets/Login';
 import {SignUp} from './componets/SignUp';
@@ -12,7 +14,9 @@ const instructions = Platform.select({
 export default class App extends Component {
   render() {
     return (
-        <SignUp/>
+      <NavigationContainer>
+        <Login />
+      </NavigationContainer>
     );
   };
 };
